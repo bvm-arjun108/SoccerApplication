@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ConfigServer/ConfigServer.iml" filepath="$PROJECT_DIR$/ConfigServer/ConfigServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LeagueApplication/LeagueApplication.iml" filepath="$PROJECT_DIR$/LeagueApplication/LeagueApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RatingService/RatingService.iml" filepath="$PROJECT_DIR$/RatingService/RatingService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ServiceRegistry/ServiceRegistry.iml" filepath="$PROJECT_DIR$/ServiceRegistry/ServiceRegistry.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Soccer Application.iml" filepath="$PROJECT_DIR$/.idea/Soccer Application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringCloudApiGateway/SpringCloudApiGateway.iml" filepath="$PROJECT_DIR$/SpringCloudApiGateway/SpringCloudApiGateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TeamsApplication/TeamsApplication.iml" filepath="$PROJECT_DIR$/TeamsApplication/TeamsApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/User-Application/User-Application.iml" filepath="$PROJECT_DIR$/User-Application/User-Application.iml" />
+    </modules>
+  </component>
+</project>

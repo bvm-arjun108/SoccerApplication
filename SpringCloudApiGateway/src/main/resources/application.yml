@@ -1,0 +1,40 @@
+# Eureka Discovery Client Properties
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9095/eureka
+  instance:
+    prefer-ip-address: true
+
+server:
+  port: 9096
+spring:
+  application:
+    name: apigateway
+
+  cloud:
+    gateway:
+      routes:
+        - id: TEAMSAPPLICATION
+          uri: lb://TEAMSAPPLICATION
+          predicates:
+            - Path=/api/v1/teams/**
+
+        - id: RATINGAPPLICATION
+          uri: lb://RATINGAPPLICATION
+          predicates:
+            - Path=/api/v1/rating/**
+
+        - id: LEAGUEAPPLICATION
+          uri: lb://LEAGUEAPPLICATION
+          predicates:
+            - Path=/api/v1/league/**
+
+        - id: USERAPPLICATION
+          uri: lb://USERAPPLICATION
+          predicates:
+            - Path=/api/v1/user/**
+
+
+
+

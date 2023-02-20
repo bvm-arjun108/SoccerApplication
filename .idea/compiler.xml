@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="TeamsApplication" />
+        <module name="SpringCloudApiGateway" />
+        <module name="ServiceRegistry" />
+        <module name="ConfigServer" />
+        <module name="RatingService" />
+        <module name="User-Application" />
+        <module name="LeagueApplication" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ConfigServer" target="17" />
+      <module name="LeagueApplication" target="17" />
+      <module name="RatingService" target="17" />
+      <module name="ServiceRegistry" target="17" />
+      <module name="SpringCloudApiGateway" target="17" />
+      <module name="TeamsApplication" target="17" />
+      <module name="User-Application" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ConfigServer" options="-parameters" />
+      <module name="LeagueApplication" options="-parameters" />
+      <module name="RatingService" options="-parameters" />
+      <module name="ServiceRegistry" options="-parameters" />
+      <module name="SpringCloudApiGateway" options="-parameters" />
+      <module name="TeamsApplication" options="-parameters" />
+      <module name="User-Application" options="-parameters" />
+    </option>
+  </component>
+</project>

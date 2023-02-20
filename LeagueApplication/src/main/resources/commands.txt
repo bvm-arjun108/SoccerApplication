@@ -1,0 +1,24 @@
+# Docker for dynamodb
+- docker pull amazon/dynamodb-locaL
+- docker run --name dynamodb -p 8000:8000 -d amazon/dynamodb-local -jar DynamoDBLocal.jar
+
+# Connect to dynamodb local instance
+- brew install awscli
+- aws --version
+- aws configure -> it will ask for the AWS Access Key, AWS Secret Key and default region. Give some fake values, accesskey, secretkey, us-east-1
+- aws dynamodb
+- aws dynamodb list-tables --endpoint-url http://localhost:8000
+- aws dynamodb create-table --table-name league --attribute-definitions AttributeName=id, AttributeType=S AttributeName=leagueName, AttributeType=S
+
+
+
+
+
+################################################################################################################################################################################################################################################################################################################################################################################################################################
+Setting NoSQLWorkbenchUser Credentials as:
+
+AWS profile : NoSQLWorkbenchUser
+Access key ID : AccessKeyID
+Secret access key : SecretAccessKey
+Default Region : us-west-2
+Output format : json
