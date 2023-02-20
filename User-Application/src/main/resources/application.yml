@@ -1,0 +1,44 @@
+spring:
+  application:
+    name: userapplication
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/soccerdb
+    username: root
+    password: Ganapati108!
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+
+  mail:
+    host: localhost
+    port: 1025
+    username: hello
+    password: hello
+
+
+    properties:
+      mail:
+        smtp:
+          ssl:
+            trust: "*"
+          auth: true
+          starttls:
+            enable: true
+          connectiontimeout: 5000
+          timeout: 3000
+          writetimeout: 5000
+
+server:
+  port: 9090
+
+# Eureka Discovery Client Properties
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9095/eureka
+  instance:
+    prefer-ip-address: true
+

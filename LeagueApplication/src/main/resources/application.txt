@@ -1,0 +1,30 @@
+
+# Aws Properties
+
+# access key: AKIA5PPIYRBN2PJSWZQE
+# secret key: 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
+
+amazon:
+  aws:
+    endpoint: dynamodb.us-east-1.amazonaws.com
+    region: us-east-1
+    accesskey: AKIA5PPIYRBN2PJSWZQE
+    secretkey: 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
+  dynamodb:
+    endpoint: ${amazon.aws.endpoint}
+    region: ${amazon.aws.region}
+
+server:
+  port: 9093
+
+#spring:
+#  application:
+#    name: league-application
+#  data:
+#    dynamodb:
+#      entity2ddl:
+#        auto: create-only
+#  main:
+#    allow-bean-definition-overriding: true
+
+
