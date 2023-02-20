@@ -1,0 +1,7 @@
+# Eureka Discovery Client Properties
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9095/eureka
+  instance:
+    prefer-ip-address: true
